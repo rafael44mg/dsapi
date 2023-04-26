@@ -40,7 +40,7 @@ try {
 } 
 catch (err) {
     console.log("Ocorreu um erro!");
-    console.log(err);
+    console.log(err); 
 }
 
 
@@ -48,20 +48,11 @@ console.log("Produtos:", cadastroProdutos.listar())
 
 console.log("Buscar Por Id(2): ", 
     cadastroProdutos.buscarPorId(2));
-try{
-    cadastroProdutos.buscarPorId(2)
-    console.log("Busca com sucesso!");
-}
-catch (err) {
-    console.log("Ocorreu um erro!");
-    console.log(err);
-}
-    console.log("Buscar Por Id(3): ", 
+console.log("Buscar Por Id(3): ", 
     cadastroProdutos.buscarPorId(3));
 
 console.log("Buscar Por Id(6): ", 
     cadastroProdutos.buscarPorId(6));
-
 
 cadastroProdutos.atualizar(1, {nome:"arroz", preco:4.5});
 cadastroProdutos.deletar(3);
